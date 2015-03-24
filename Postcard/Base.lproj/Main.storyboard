@@ -103,6 +103,15 @@
                                     <action selector="SendMailButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5LU-me-0z6"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSt-dy-hTg">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="155" width="261" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -112,6 +121,7 @@
                                 <exclude reference="g6h-Ia-ed1"/>
                                 <exclude reference="GkN-Zt-gw2"/>
                                 <exclude reference="BUo-Fc-DHk"/>
+                                <exclude reference="CSt-dy-hTg"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -121,10 +131,12 @@
                                 <include reference="g6h-Ia-ed1"/>
                                 <include reference="GkN-Zt-gw2"/>
                                 <include reference="BUo-Fc-DHk"/>
+                                <include reference="CSt-dy-hTg"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="NameLable" destination="CSt-dy-hTg" id="FOe-6e-GR4"/>
                         <outlet property="mailButton" destination="BUo-Fc-DHk" id="bhi-7g-tfY"/>
                         <outlet property="messageLable" destination="GkN-Zt-gw2" id="140-a3-EW1"/>
                         <outlet property="messageTextField" destination="g6h-Ia-ed1" id="Bja-yd-yGj"/>
